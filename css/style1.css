@@ -1,0 +1,486 @@
+@charset "UTF-8";
+body,ul,p,input{margin:0;padding:0;}
+ul{list-style-type:none;}
+a{text-decoration:none;}
+*{font-size:0;}
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+#wrap{
+	width:100%;
+	height:100%;
+}
+/* ---网页头部--- */
+#header{
+	position:relative;
+	width:100%;
+	height:55px;
+}
+.h-left,.h-center,.h-right{
+	position:absolute;
+}
+/* ---网页头部左边区域开始--- */
+.h-left{
+	width:179px;
+	line-height:54px;
+	top:0;
+	left:0;
+	background-color:rgb(206,40,69);
+	text-align:center;
+}
+.h-left>a{
+	cursor:default;
+	font-size:12px;
+	color:#fff;
+}
+.h-left>a i{
+	display:inline-block;
+	width:25px;
+	height:11px;
+	margin-right:8px;
+	background:url(../img1/sprite-w_dd519f4.png) no-repeat -90px -306px;
+}
+/* ---网页头部左边区域结束--- */
+
+
+/*---网易游戏logo区域开始--- */
+.h-center{
+	width:133px;
+	height:54px;
+	top:0;
+	left:0;
+	right:0;
+	margin:auto;
+}
+.h-center>a{
+	display:block;
+	width:100%;
+	height:54px;
+	background:url(../img1/logo_b5525b7.png) no-repeat 0px 7px;
+}
+/*---网易游戏logo区域结束--- */
+
+
+/* ---网页头部右边区域开始--- */
+.h-right{
+	width:139px;
+	height:55px;
+	top:0;
+	right:0;
+	border-left:1px solid #ddd;
+}
+.h-right>a{
+	display:block;
+	width:100%;
+	line-height:52px;
+	font-size:12px;
+	color:#000;
+	text-align:center;
+}
+.h-right>a:hover{
+	color:rgb(206,40,69);
+	background-color:rgb(249,249,249);
+	border-bottom:1px solid rgb(206,40,69);
+}
+/* ---网页头部右边区域结束--- */
+
+
+/*---内容部分--- */
+#content{
+	width:100%;
+	height:3100px;
+	background:url(../img1/bg_66e6e89.jpg) no-repeat center;
+}
+/*---二维码固定区域---*/
+#NIE-download{
+	position:fixed;
+	width:203px;
+	height:463px;
+	top:82px;
+	right:-6px;
+	background-color:blue;
+	background:url(../img1/dl_bg_44fc686.png);
+	z-index:999;
+	
+}
+.Expand-or-collapse{
+	position:absolute;
+	width:50px;
+	height:110px;
+}
+.Expand-or-collapse .Expand{
+	display:block;
+	padding:0px 15px;
+	font-size:20px;
+	color:#fff;
+}
+.Expand-or-collapse .Expand>i{
+	display:block;
+	width:21px;
+	height:21px;
+	margin:15px auto 0;
+	background:url(../img1/packup_f77059a.png);
+}
+.Expand-or-collapse .Expand>input{
+	width:26px;
+	border:none;
+}
+.h-code{
+	position:absolute;
+	height:300px;
+	padding:0 15px;
+	right:0;
+}
+.line{
+	position:absolute;
+	width:121px;
+	height:120px;
+	top:9px;
+	left:18px;
+}
+.line:before{
+	content:"";
+	position:absolute;
+	width:100%;
+	height:9px;
+	top:0px;
+	left:-2px;
+	background:url(../img1/line01_dcb1cb1.png) no-repeat;
+	animation:line 3s linear infinite;
+}
+@keyframes line{
+	0%{transform:translateY(0px);}
+	50%{transform:translateY(112px);}
+	100%{transform:translateY(0px);}
+}
+.h-code>a.h-img1,a.h-img2,a.h-img3{
+	display:block;
+}
+.h-code>a.h-img1>img{
+	width:127px;
+	height:127px;
+	margin:5px 0;
+}
+.h-code>a.h-img2>img{
+	width:127px;
+	height:127px;
+	margin-bottom:10px;
+}
+.h-code>a.h-img2:hover img{
+	opacity:.8;
+}
+.h-code>a.h-img3>img{
+	width:127px;
+	height:176px;
+	cursor:default;
+}
+
+
+/*---part01开始--- */
+.part01{
+	position:relative;
+	width:100%;
+	height:976px;
+}
+.part01>a{
+	position:absolute;
+}
+.part01>a.logo{
+	width:75px;
+	height:198px;
+	top:30px;
+	left:30px;
+	background:url(../img1/logo.webp) no-repeat center/75px 198px;
+}
+.part01>a.gw{
+	width:155px;
+	height:46px;
+	top:30px;
+	right:30px;
+	background:url(../img1/gw_20acea7.png) no-repeat center;
+}
+.part01>a.gw:hover{
+	opacity:.8;
+}
+/*---part01结束--- */
+
+/*---part02开始--- */
+.part02{
+	width:1200px;
+	height:980px;
+	margin:auto;
+}
+.part02>div.tit{
+	width:379px;
+	height:63px;
+	margin:auto;
+	background:url(../img1/tit01_4f8b887.png) no-repeat;
+}
+.part02>ul.news-btn{
+	position:relative;
+	width:1200px;
+	margin:40px auto 0;
+}
+.part02>ul.news-btn .more-btn{
+	position:absolute;
+	cursor:pointer;
+	transition:transform .5s;
+}
+.part02>ul.news-btn .more-btn:hover{
+	transform:translateY(-13px);
+}
+.part02 .news-btn .more-btn.btn01{
+	top:-48px;
+	left:63px;
+}
+.part02 .news-btn .more-btn.btn02{
+	top:2px;
+	left:455px;
+}
+.part02 .news-btn .more-btn.btn03{
+	top:-41px;
+	right:5px;
+}
+.part02 .news-btn .more-btn.btn04{
+	top:413px;
+	left:-5px;
+}
+.part02 .news-btn .more-btn.btn05{
+	top:354px;
+	left:455px;
+}
+.part02 .news-btn .more-btn.btn06{
+	top:379px;
+	right:-10px;
+}
+/*---part02结束--- */
+
+/*---part03开始--- */
+.part03{
+	position:relative;
+	width:1260px;
+	height:830px;
+	margin:auto;
+}
+.part03>div.tit{
+	width:329px;
+	height:63px;
+	margin:0 auto 48px;
+	background:url(../img1/tit02_f4c22b7.png);
+}
+.part03>div.swiper-container{
+	perspective:800px;
+	width:1050px;
+	margin:auto;
+}
+.part03>div.swiper-container .banner-wrap{
+	position:relative;
+	width:817px;
+	height:614px;
+	margin:auto;
+	transform-style:preserve-3d;
+}
+.part03>div.swiper-container .banner-wrap>li{
+	position:absolute;
+	width:817px;
+	height:614px;
+	top:0;
+	left:0;
+}
+.part03>div.swiper-container .banner-wrap>li:nth-child(1){
+	transform:translate3d(-130px,0px,-50px) rotateY(60deg);
+	transform-origin:left;
+	filter:brightness(.5);
+}
+.part03>div.swiper-container .banner-wrap>li:nth-child(3){
+	transform:translate3d(130px,0px,-50px) rotateY(-60deg);
+	transform-origin:right;
+	filter:brightness(.5);
+}
+.part03>div.swiper-container img{
+	display:block;
+	width:811px;
+	border:3px solid #cbc08e;
+}
+.part03 .swiper-button{
+	position:absolute;
+	width:43px;
+	height:77px;
+	top:50%;
+	margin-top:-10px;
+}
+.part03 .prev{
+	left:20px;
+	background:url(../img1/prev_5119dcd.png) no-repeat;
+}
+.part03 .next{
+	right:20px;
+	background:url(../img1/next_ed58e31.png) no-repeat;
+}
+/*---part03结束--- */
+
+.share{
+	position:relative;
+	width:425px;
+	margin:8px auto 0;
+}
+.share .NIE-share-txt{
+	display:inline-block;
+}
+.share .NIE-share-txt span{
+	font-size:12px;
+	color:#efcb97;
+	vertical-align:middle;
+}
+.share>ul{
+	display:inline-block;
+	vertical-align:middle;
+}
+.share>ul>li{
+	float:left;
+	line-height:24px;
+	color:#efcb97;
+	margin:0 11px;
+}
+.share .more{
+	margin-right:0;
+}
+.share .more>a{
+	display:block;
+	width:59px;
+}
+.share>ul>li>a{
+	color:#efcb97;
+}
+.share>ul>li>a:hover{
+	color:#a70d01;
+}
+.share>ul>li>a i{
+	font-size:20px;
+	vertical-align:middle;
+}
+.share>ul a i.icon-yixin{
+	font-size:23px;
+}
+.share>ul>li>a span{
+	display:inline-block;
+	font-size:12px;
+	vertical-align:middle;
+}
+.share .QQ{
+	position:absolute;
+	width:103px;
+	top:6px;
+	right:-98px;
+	border:1px solid #eee;
+	background-color:#fff;
+	display:none;
+}
+.share .QQ>a{
+	display:block;
+	margin:2px;
+	padding:1px;
+	text-align:center;
+	font-size:12px;
+	color:#000;
+}
+.share .QQ>a .icons{
+	display:inline-block;
+	width:18px;
+	height:18px;
+	margin-right:5px;
+	background:url(../img1/icon.v5.png) no-repeat -1px -477px;
+	vertical-align:middle;
+}
+.share .more:hover .QQ{
+	display:block;
+}
+.share .QQ:hover a{
+	background-color:rgb(240,240,240);
+}
+/*---share结束---*/
+
+
+
+/*---NIE-copyRight开始---*/
+.NIE-copyRight{
+	width:100%;
+}
+
+.nie-copyright-new-inner{
+	width:955px;
+	margin:0 auto;
+	padding:15px 0 10px;
+}
+.nie-cn-part1{
+	width:100%;
+}
+.nie-cn-logo{
+	display:inline-block;
+	width:359px;
+	vertical-align:middle;
+}
+.nie-cn-logo .pic1,.pic2{
+	display:inline-block;
+}
+.nie-cn-logo .pic1 img{
+	padding-top:5px;
+}
+.nie-cn-logo .pic2 img{
+	padding-top:5px;
+}
+.nie-cn-logo .pic3 img{
+	padding:5px 15px 0;
+}
+.nie-cn-logo .pic4 img{
+	padding:5px 15px 0 0;
+}
+
+.nie-cn-nav{
+	display:inline-block;
+	width:479px;
+	margin-top:5px;
+	vertical-align:middle;
+	color:#fff;
+}
+.nie-cn-nav-i1,.nie-cn-nav-i2{
+	display:block;
+	width:100%;
+	font-style:normal;
+	font-size:12px;
+}
+.nie-cn-nav-i1>a{
+	font-size:12px;
+	color:#fff;
+}
+.nie-cn-nav-i2{
+	position:relative;
+	line-height:26px;
+}
+.nie-cn-nav-i2>a{
+	position:absolute;
+	right:0;
+	padding:0 5px;
+	background-color:rgb(97,0,0);
+	font-size:12px;
+	color:#fff;
+	text-align:right;
+}
+.nie-cn-nav a:hover{
+	text-decoration:underline;
+}
+
+.nie-cn-part2{
+	width:100%;
+	margin-top:10px;
+}
+.nie-cn-part2>p,.nie-cn-part2>span,.nie-cn-part2>a{
+	line-height:24px;
+	font-size:12px;
+	color:#fff;
+}
+.nie-cn-part2>a:hover{
+	text-decoration:underline;
+}

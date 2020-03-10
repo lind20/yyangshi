@@ -1,0 +1,80 @@
+@charset "UTF-8";
+body,ul,p,h3{margin:0;padding:0}
+a{text-decoration:none;display:block;}
+ul{list-style-type:none;}
+em{font-style:normal;display:block;}
+span{display:inline-block;}
+
+/* 清除浮动 */
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+/* 竖杆 */
+.montant:after{
+	content:"";
+	position:absolute;
+	width:1px;
+	height:10px;
+	right:0;
+	top:-12px;
+	bottom:0;
+	margin:auto;
+	background-color:#fff;
+}
+
+/* 波浪线条 */
+.c-line{
+	display:block;
+	width:91px;
+	height:6px;
+	margin:2px 0 0 34px;
+	background:url(../img2/index_z_f101808.png) no-repeat -150px -283px;
+	display:none;
+}
+.w-pic{
+	background:url(../img2/index_z_f101808.png) no-repeat;
+}
+
+/* 同人手帐-热门标签 */
+#part_tongren .tit_con{
+	float:left;
+	width:95px;
+	height:23px;
+	background:url(../img2/index_z_f101808.png) no-repeat -155px -250px;
+}
+
+/* 换一批 */
+#content .w-batch{
+	width:680px;
+	height:42px;
+	line-height:42px;
+	text-align:right;
+	padding-right:20px;
+	font-size:12px;
+	color: #7fc4d2;
+}
+#content .w-batch>i{
+	display:inline-block;
+	width:14px;
+	height:15px;
+	background:url(../img2/index_z_f101808.png) no-repeat -1264px -452px;
+	vertical-align:middle;
+	transition:transform .3s ease;
+}
+#content .w-batch:hover i{
+	transform:rotate(360deg);
+}
+
+/* 箭头鼠标移入动画 */
+@keyframes arrow{
+	0%{transform:translateX(0px);}
+	20%{transform:translateX(-8px);}
+	40%{transform:translateX(0px);}
+	60%{transform:translateX(-7px);}
+	75%{transform:translateX(0px);}
+	85%{transform:translateX(-7px);}
+	100%{transform:translateX(0px);}
+}
